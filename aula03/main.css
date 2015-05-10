@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Verdana;
+}
+
+.success {
+	opacity: 0;
+	color: green;
+	font-size: 10px;
+	text-align: center;
+}
+
+#user-form {
+	width: 200px;
+	margin: 50px auto;
+}
+
+#user-form input {
+	display: block;
+	margin: 5px 0;
+}
+
+input {
+	padding: 10px 5px;
+	width: 200px;
+	border-radius: 3px;
+	border: 1px solid #DFDFDF;
+}
+
+.add-phone {
+	width: 200px;
+	color: #DFDFDF;
+	text-align: center;
+	display: block;
+	border-radius: 3px;
+	border: 1px solid #DFDFDF;
+	margin: 5px 0;
+	padding: 5px;
+	cursor: pointer;
+	font-family: Verdana;
+  	font-size: 8px;
+}
+
+button {
+	padding: 10px 20px;
+	background: green;
+	color: #FFF;
+	border-radius: 3px;
+	border: none;
+	width: 200px;
+}
+
+.phone-list {
+	list-style: none;
+}

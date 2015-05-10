@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Exemplo - Inserindo javascript</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<form id="user-form" action="">
+		<h2>Cadastre-se</h2>
+		<span class="success">Usuario cadastrado com suscesso!</span>
+		<input type="text" name="name" placeholder="Nome">
+		<input type="email" name="email" placeholder="E-mail (ex.: contato@contato.com)">
+		<ul class="phone-list">
+			<li class="phone-item"><input type="phone" name="phone[]" placeholder="Telefone (ex.: (099) 9999-9999)"></li>
+		</ul>
+		<a class="add-phone">Adicionar telefone</a>
+		<button id="btn-save">Salvar</button>
+	</form>
+	<script type="text/javascript" src="modulo.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
