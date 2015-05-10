@@ -11,3 +11,4 @@ Exemplos criados durante o curso de extensão Javascript Básico, ministrado na 
 - [developer.mozilla.org](https://developer.mozilla.org/pt-BR/)
 - [REST](http://pt.wikipedia.org/wiki/REST)
 - [O grande desencontro do HTTP com o HTML](http://tableless.com.br/o-grande-desencontro-http-com-o-html/)
+- [codepen.io/luizstacio](http://codepen.io/luizstacio)
