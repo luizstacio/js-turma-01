@@ -1,6 +1,11 @@
 (function () {
 	var $addPhone = modulo.find('.add-phone'),
-		$form = modulo.find('#user-form');
+		$form = modulo.find('#user-form'),
+		tpmlTaks = ('<h3>Nova tarefa</h3><input class="task-finished" type="checkbox">'+
+					'<form id="tasks-form" action="">'+
+						'<input type="text" name="title" value="">'+
+						'<textarea name="description"></textarea>'+
+					'</form>');
 
 	modulo.on($addPhone, 'click', function (e) {
 		var $li = document.createElement('li'),
@@ -28,5 +33,24 @@
 		});
 
 		e.preventDefault();
-	})
+	});
+
+
+	function listarTarefas () {
+		var $ulTasks = document.querySelector('.tasks-list'),
+			tmpl;
+
+		for (var i = 10; i >= 0; i--) {
+			var $li = document.createElement('li'),
+			tmpl = tpmlTaks;
+
+			$li.classList.add('tasks-item');
+			$li.innerHTML += tmpl;
+
+			$ulTasks.insertBefore($li, $ulTasks.lastElementChild);
+		};
+	}
+
+	listarTarefas();
+
 }());
