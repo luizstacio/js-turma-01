@@ -12,21 +12,29 @@
 	text-align: center;
 }
 
+#tasks-form,
 #user-form {
 	width: 200px;
 	margin: 50px auto;
 }
 
+#tasks-form,
 #user-form input {
 	display: block;
 	margin: 5px 0;
 }
 
-input {
+input,
+textarea {
 	padding: 10px 5px;
 	width: 200px;
 	border-radius: 3px;
 	border: 1px solid #DFDFDF;
+}
+
+textarea {
+	margin: 5px 0;
+	resize: none;
 }
 
 .add-phone {
@@ -50,8 +58,22 @@ button {
 	border-radius: 3px;
 	border: none;
 	width: 200px;
+	cursor: pointer;
 }
 
 .phone-list {
 	list-style: none;
+}
+
+.tasks-title {
+	margin: 30px;
+}
+
+.tasks-list {
+	list-style: none;
+}
+
+.tasks-item {
+	margin: 30px;
+	float: left;
 }
