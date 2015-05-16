@@ -6,17 +6,32 @@
 	<link rel="stylesheet" href="main.css">
 </head>
 <body>
-	<form id="user-form" action="">
-		<h2>Cadastre-se</h2>
-		<span class="success">Usuario cadastrado com suscesso!</span>
-		<input type="text" name="name" placeholder="Nome">
-		<input type="email" name="email" placeholder="E-mail (ex.: contato@contato.com)">
-		<ul class="phone-list">
-			<li class="phone-item"><input type="phone" name="phone[]" placeholder="Telefone (ex.: (099) 9999-9999)"></li>
+	<section style="display: none;">
+		<form id="user-form" action="">
+			<h2>Cadastre-se</h2>
+			<span class="success">Usuario cadastrado com suscesso!</span>
+			<input type="text" name="name" placeholder="Nome">
+			<input type="email" name="email" placeholder="E-mail (ex.: contato@contato.com)">
+			<ul class="phone-list">
+				<li class="phone-item"><input type="phone" name="phone[]" placeholder="Telefone (ex.: (099) 9999-9999)"></li>
+			</ul>
+			<a class="add-phone">Adicionar telefone</a>
+			<button id="btn-save">Salvar</button>
+		</form>
+	</section>
+	<section class="tasks-container">
+		<h1 class="tasks-title">Tarefas</h1>
+		<ul class="tasks-list">
+			<li class="tasks-item">
+				<h3>Nova tarefa</h3>
+				<form id="tasks-form" action="">
+					<input type="text" name="title" placeholder="Titúlo ex.: Ir ao mercado">
+					<textarea name="description" placeholder="Descrição ex.: Não vai ter janta"></textarea>
+					<button id="btn-save">Salvar</button>
+				</form>
+			</li>
 		</ul>
-		<a class="add-phone">Adicionar telefone</a>
-		<button id="btn-save">Salvar</button>
-	</form>
+	</section>
 	<script type="text/javascript" src="modulo.js"></script>
 	<script type="text/javascript" src="app.js"></script>
 </body>
