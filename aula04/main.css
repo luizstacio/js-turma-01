@@ -13,12 +13,14 @@
 }
 
 #tasks-form,
+#search-form,
 #user-form {
 	width: 200px;
 	margin: 50px auto;
 }
 
 #tasks-form,
+#search-form input,
 #user-form input {
 	display: block;
 	margin: 5px 0;
